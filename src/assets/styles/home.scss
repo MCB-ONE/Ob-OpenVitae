@@ -1,0 +1,95 @@
+@import './colors';
+@import './breakpints';
+.home{
+    /*Forzar altura total*/
+    height: 100vh;
+    .primary-form{
+        background-color: $color-dark-blue;
+        padding: 80px 80px 120px 80px;
+        color: $color-white;
+        .title-form{
+            font-size: 2.5rem;
+        }
+        .logo{
+            display: flex;
+            h1{
+                font-weight: 700;
+                margin-left: 10px;
+            }
+            img{
+                width: 60px;
+                height: 68px;
+            }
+        }
+        form{
+            label{
+                font-weight: 200;
+            }
+
+            .error{
+                color: $color-red;
+            }
+            .form-control{
+                background: none;
+                border-color: $color-blue--grey;
+                padding: 7px 10px;
+                font-size: .9rem;
+                color: #e2e3e7;
+                &::placeholder{
+                    color:  $color-blue--grey;
+                }
+                &:active, &:focus{
+                    color:$color-blue--grey
+                }
+            }
+            .password{
+                div{
+                    position: relative;
+                    svg{
+                        position: absolute;
+                        top: 30%;
+                        right: 7px;
+                    }
+                }
+            }
+            .form-check {
+                display: flex;
+                justify-content: space-between;
+                .info{
+                        font-size: 0.9rem;
+                }
+            }
+            .form-check-input[type=checkbox] {
+                background: none;
+                border-radius: 0.25em;
+                border: $color-white 2px solid;
+            }
+        }
+    }
+    .home-main{
+        color: $color-dark-blue;
+        padding: 20px 20px 0px 20px;
+        @media only screen and (max-width: $breakpoint-phone) {
+            padding: 20px 20px 0px 20px;
+        }
+
+        /*Titulos*/
+        .title{
+            font-size: 78px;
+            line-height: 60px;
+            font-weight: 900;
+            padding: 20px 20px 0px 20px;
+            @media only screen and (max-width: $breakpoint-phone) {
+                padding: 0px;
+                font-size: 48px;
+                line-height: 40px;
+                font-weight: 900;
+            }
+        }
+        .subtitle{
+            font-weight: 400;
+            margin-top: 2rem;
+            letter-spacing: 5px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import-normalize;
+
+/*Colores*/
+$color-white: #FFFFFF;
+$color-dark-blue: #0B112A;
+$color-green: #25F880;
+$color-dark--green: #0EEE77;
+$color-grey: #858895;
+
+.text-green{
+    color: $color-dark--green;
+}
+
+
+/*Titulos*/
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Botones*/
+.btn-green{
+    color: $color-white;
+    background-color: $color-green;
+}
